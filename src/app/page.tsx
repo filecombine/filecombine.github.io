@@ -12,7 +12,7 @@ export default function Home() {
     <div className="min-h-screen flex flex-col">
       <Navbar />
       <div className="flex-grow bg-gray-50 dark:bg-gray-900">
-        <main className="container mx-auto px-4 py-6 flex flex-col gap-4">
+        <main className="container mx-auto px-4 py-2 flex flex-col gap-1">
           <FileUploader />
           <FileList />
           <DownloadButton />
@@ -21,12 +21,22 @@ export default function Home() {
       <footer className="bg-white dark:bg-gray-800 py-3">
         <div className="max-w-3xl mx-auto px-4">
           <p className="text-center text-sm text-gray-500 dark:text-gray-400">
-            © 2024 File Combine. All rights reserved.
+            © 2024 File Combine. 
+            <br/>
+            <a 
+              href="https://www.linkedin.com/in/mdhasibulislamin"
+              className="hover:text-blue-500 transition-colors duration-200"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+            Made by{" "}  Md Hasibul Islam
+            </a>
+           
           </p>
         </div>
       </footer>
       <ToastContainer
-        position="bottom-right"
+        position="bottom-left"
         autoClose={1000}
         hideProgressBar={false}
         closeOnClick
